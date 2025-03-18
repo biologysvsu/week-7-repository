@@ -61,12 +61,12 @@ If QIIME2 does not work, there may be a Conda environment conflict.
 
 a. Check for Incomplete Installations
 ```
-ls -l /jet/home/iliebler/.conda/envs/
+ls -l /jet/home/your-username/.conda/envs/
 ```
 If you see an incomplete QIIME2 installation, proceed to the next step.
 b. Manually delete those installations
 ```
-rm -rf /jet/home/iliebler/.conda/envs/qiime2-amplicon-2024.2
+rm -rf /jet/home/yourusername/.conda/envs/qiime2-amplicon-2024.2
 ```
 c. Clean Up Conda Cache
 ```
