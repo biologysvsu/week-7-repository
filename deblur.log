@@ -1,0 +1,774 @@
+INFO(139844425688896)2025-03-13 10:54:00,510:*************************
+INFO(139844425688896)2025-03-13 10:54:00,510:deblurring started
+WARNING(139844425688896)2025-03-13 10:54:00,511:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data
+WARNING(139844425688896)2025-03-13 10:54:00,512:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 4, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(139844425688896)2025-03-13 10:54:00,512:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139844425688896)2025-03-13 10:54:00,512:deblur main program started
+INFO(139844425688896)2025-03-13 10:54:00,512:processing directory /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data
+INFO(139844425688896)2025-03-13 10:54:00,513:building negative db sortmerna index files
+INFO(139844425688896)2025-03-13 10:54:00,514:build_index_sortmerna files ['/jet/home/jparedesmontero/.conda/envs/qiime2-amplicon-2024.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(139844425688896)2025-03-13 10:54:00,593:building positive db sortmerna index files
+INFO(139844425688896)2025-03-13 10:54:00,593:build_index_sortmerna files ['/jet/home/jparedesmontero/.conda/envs/qiime2-amplicon-2024.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(139844425688896)2025-03-13 10:54:49,218:parallel processing per sample fasta files
+INFO(139844425688896)2025-03-13 10:54:49,227:parallel deblur started for 12 inputs
+INFO(140480220342080)2025-03-13 10:54:53,690:*************************
+INFO(139855518795584)2025-03-13 10:54:53,690:*************************
+INFO(139936180389696)2025-03-13 10:54:53,690:*************************
+INFO(139671360628544)2025-03-13 10:54:53,690:*************************
+INFO(140480220342080)2025-03-13 10:54:53,690:deblurring started
+INFO(139855518795584)2025-03-13 10:54:53,690:deblurring started
+INFO(139936180389696)2025-03-13 10:54:53,690:deblurring started
+INFO(139671360628544)2025-03-13 10:54:53,691:deblurring started
+WARNING(140480220342080)2025-03-13 10:54:53,692:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz
+WARNING(139936180389696)2025-03-13 10:54:53,692:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz
+WARNING(139671360628544)2025-03-13 10:54:53,692:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz
+WARNING(139855518795584)2025-03-13 10:54:53,692:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz
+WARNING(140480220342080)2025-03-13 10:54:53,692:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+WARNING(139936180389696)2025-03-13 10:54:53,692:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+WARNING(139671360628544)2025-03-13 10:54:53,692:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140480220342080)2025-03-13 10:54:53,692:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+WARNING(139855518795584)2025-03-13 10:54:53,692:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139936180389696)2025-03-13 10:54:53,692:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139671360628544)2025-03-13 10:54:53,692:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140480220342080)2025-03-13 10:54:53,692:deblur worker thread started
+INFO(139855518795584)2025-03-13 10:54:53,692:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139936180389696)2025-03-13 10:54:53,692:deblur worker thread started
+INFO(139671360628544)2025-03-13 10:54:53,692:deblur worker thread started
+INFO(140480220342080)2025-03-13 10:54:53,692:processing per sample fasta files
+INFO(139855518795584)2025-03-13 10:54:53,692:deblur worker thread started
+INFO(139936180389696)2025-03-13 10:54:53,692:processing per sample fasta files
+INFO(139671360628544)2025-03-13 10:54:53,692:processing per sample fasta files
+INFO(140480220342080)2025-03-13 10:54:53,692:--------------------------------------------------------
+INFO(139855518795584)2025-03-13 10:54:53,692:processing per sample fasta files
+INFO(139936180389696)2025-03-13 10:54:53,692:--------------------------------------------------------
+INFO(139671360628544)2025-03-13 10:54:53,692:--------------------------------------------------------
+INFO(140480220342080)2025-03-13 10:54:53,692:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz
+INFO(139855518795584)2025-03-13 10:54:53,692:--------------------------------------------------------
+INFO(139936180389696)2025-03-13 10:54:53,692:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz
+INFO(139671360628544)2025-03-13 10:54:53,692:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz
+INFO(139855518795584)2025-03-13 10:54:53,692:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz
+INFO(139671360628544)2025-03-13 10:54:57,585:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim
+INFO(139671360628544)2025-03-13 10:54:57,680:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim.derep
+INFO(139671360628544)2025-03-13 10:54:58,211:total sequences 2272, passing sequences 2272, failing sequences 0
+INFO(139671360628544)2025-03-13 10:54:58,212:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139855518795584)2025-03-13 10:54:58,560:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim
+INFO(139855518795584)2025-03-13 10:54:58,673:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim.derep
+INFO(139855518795584)2025-03-13 10:54:59,269:total sequences 3170, passing sequences 3170, failing sequences 0
+INFO(139855518795584)2025-03-13 10:54:59,271:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140480220342080)2025-03-13 10:55:00,015:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim
+INFO(140480220342080)2025-03-13 10:55:00,136:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim.derep
+INFO(139936180389696)2025-03-13 10:55:00,411:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim
+INFO(139936180389696)2025-03-13 10:55:00,509:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim.derep
+INFO(140480220342080)2025-03-13 10:55:00,694:total sequences 3178, passing sequences 3178, failing sequences 0
+INFO(140480220342080)2025-03-13 10:55:00,694:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139936180389696)2025-03-13 10:55:01,119:total sequences 3875, passing sequences 3875, failing sequences 0
+INFO(139936180389696)2025-03-13 10:55:01,119:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139671360628544)2025-03-13 10:55:11,523:deblurring 2272 sequences
+INFO(139671360628544)2025-03-13 10:55:19,433:1826 unique sequences left following deblurring
+INFO(139671360628544)2025-03-13 10:55:19,450:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(139855518795584)2025-03-13 10:55:21,569:deblurring 3170 sequences
+INFO(139671360628544)2025-03-13 10:55:22,197:finished processing file
+INFO(139671360628544)2025-03-13 10:55:22,200:finished processing per sample fasta files
+INFO(139671360628544)2025-03-13 10:55:22,200:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz finished
+INFO(140480220342080)2025-03-13 10:55:22,396:deblurring 3178 sequences
+INFO(140188625807168)2025-03-13 10:55:25,839:*************************
+INFO(140188625807168)2025-03-13 10:55:25,840:deblurring started
+WARNING(140188625807168)2025-03-13 10:55:25,841:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz
+WARNING(140188625807168)2025-03-13 10:55:25,841:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140188625807168)2025-03-13 10:55:25,841:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140188625807168)2025-03-13 10:55:25,841:deblur worker thread started
+INFO(140188625807168)2025-03-13 10:55:25,841:processing per sample fasta files
+INFO(140188625807168)2025-03-13 10:55:25,841:--------------------------------------------------------
+INFO(140188625807168)2025-03-13 10:55:25,841:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz
+INFO(140188625807168)2025-03-13 10:55:31,940:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim
+INFO(140188625807168)2025-03-13 10:55:32,066:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim.derep
+INFO(140188625807168)2025-03-13 10:55:32,672:total sequences 4039, passing sequences 4039, failing sequences 0
+INFO(140188625807168)2025-03-13 10:55:32,672:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139936180389696)2025-03-13 10:55:34,181:deblurring 3875 sequences
+INFO(140480220342080)2025-03-13 10:55:35,353:2059 unique sequences left following deblurring
+INFO(140480220342080)2025-03-13 10:55:35,372:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(139855518795584)2025-03-13 10:55:37,782:2558 unique sequences left following deblurring
+INFO(139855518795584)2025-03-13 10:55:37,806:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(140480220342080)2025-03-13 10:55:38,470:finished processing file
+INFO(140480220342080)2025-03-13 10:55:38,474:finished processing per sample fasta files
+INFO(140480220342080)2025-03-13 10:55:38,474:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz finished
+INFO(140033824646976)2025-03-13 10:55:41,489:*************************
+INFO(140033824646976)2025-03-13 10:55:41,489:deblurring started
+WARNING(140033824646976)2025-03-13 10:55:41,489:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz
+WARNING(140033824646976)2025-03-13 10:55:41,489:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140033824646976)2025-03-13 10:55:41,489:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140033824646976)2025-03-13 10:55:41,490:deblur worker thread started
+INFO(140033824646976)2025-03-13 10:55:41,490:processing per sample fasta files
+INFO(140033824646976)2025-03-13 10:55:41,490:--------------------------------------------------------
+INFO(140033824646976)2025-03-13 10:55:41,490:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz
+INFO(139855518795584)2025-03-13 10:55:42,095:finished processing file
+INFO(139855518795584)2025-03-13 10:55:42,102:finished processing per sample fasta files
+INFO(139855518795584)2025-03-13 10:55:42,102:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz finished
+INFO(140112725817152)2025-03-13 10:55:43,856:*************************
+INFO(140112725817152)2025-03-13 10:55:43,856:deblurring started
+WARNING(140112725817152)2025-03-13 10:55:43,857:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz
+WARNING(140112725817152)2025-03-13 10:55:43,857:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140112725817152)2025-03-13 10:55:43,857:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140112725817152)2025-03-13 10:55:43,857:deblur worker thread started
+INFO(140112725817152)2025-03-13 10:55:43,857:processing per sample fasta files
+INFO(140112725817152)2025-03-13 10:55:43,857:--------------------------------------------------------
+INFO(140112725817152)2025-03-13 10:55:43,857:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz
+INFO(140033824646976)2025-03-13 10:55:46,795:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim
+INFO(140033824646976)2025-03-13 10:55:46,885:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim.derep
+INFO(140033824646976)2025-03-13 10:55:47,416:total sequences 2697, passing sequences 2697, failing sequences 0
+INFO(140033824646976)2025-03-13 10:55:47,417:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140112725817152)2025-03-13 10:55:50,797:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim
+INFO(140112725817152)2025-03-13 10:55:50,929:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim.derep
+INFO(140112725817152)2025-03-13 10:55:51,532:total sequences 4103, passing sequences 4103, failing sequences 0
+INFO(140112725817152)2025-03-13 10:55:51,532:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139936180389696)2025-03-13 10:55:59,045:3222 unique sequences left following deblurring
+INFO(139936180389696)2025-03-13 10:55:59,094:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(139936180389696)2025-03-13 10:56:04,152:finished processing file
+INFO(139936180389696)2025-03-13 10:56:04,157:finished processing per sample fasta files
+INFO(139936180389696)2025-03-13 10:56:04,157:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz finished
+INFO(140033824646976)2025-03-13 10:56:04,646:deblurring 2697 sequences
+INFO(139718191679296)2025-03-13 10:56:07,057:*************************
+INFO(139718191679296)2025-03-13 10:56:07,058:deblurring started
+WARNING(139718191679296)2025-03-13 10:56:07,058:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz
+WARNING(139718191679296)2025-03-13 10:56:07,058:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139718191679296)2025-03-13 10:56:07,058:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139718191679296)2025-03-13 10:56:07,058:deblur worker thread started
+INFO(139718191679296)2025-03-13 10:56:07,058:processing per sample fasta files
+INFO(139718191679296)2025-03-13 10:56:07,058:--------------------------------------------------------
+INFO(139718191679296)2025-03-13 10:56:07,059:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz
+INFO(140188625807168)2025-03-13 10:56:08,195:deblurring 4039 sequences
+INFO(139718191679296)2025-03-13 10:56:12,566:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim
+INFO(139718191679296)2025-03-13 10:56:12,672:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim.derep
+INFO(139718191679296)2025-03-13 10:56:13,225:total sequences 3223, passing sequences 3223, failing sequences 0
+INFO(139718191679296)2025-03-13 10:56:13,225:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140033824646976)2025-03-13 10:56:15,435:2013 unique sequences left following deblurring
+INFO(140033824646976)2025-03-13 10:56:15,455:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(140033824646976)2025-03-13 10:56:18,512:finished processing file
+INFO(140033824646976)2025-03-13 10:56:18,516:finished processing per sample fasta files
+INFO(140033824646976)2025-03-13 10:56:18,516:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz finished
+INFO(139759320397632)2025-03-13 10:56:20,578:*************************
+INFO(139759320397632)2025-03-13 10:56:20,578:deblurring started
+WARNING(139759320397632)2025-03-13 10:56:20,578:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz
+WARNING(139759320397632)2025-03-13 10:56:20,578:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139759320397632)2025-03-13 10:56:20,578:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139759320397632)2025-03-13 10:56:20,578:deblur worker thread started
+INFO(139759320397632)2025-03-13 10:56:20,579:processing per sample fasta files
+INFO(139759320397632)2025-03-13 10:56:20,579:--------------------------------------------------------
+INFO(139759320397632)2025-03-13 10:56:20,579:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz
+INFO(139759320397632)2025-03-13 10:56:24,541:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim
+INFO(139759320397632)2025-03-13 10:56:24,644:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim.derep
+INFO(139759320397632)2025-03-13 10:56:25,227:total sequences 2525, passing sequences 2525, failing sequences 0
+INFO(139759320397632)2025-03-13 10:56:25,230:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140112725817152)2025-03-13 10:56:26,888:deblurring 4103 sequences
+INFO(140188625807168)2025-03-13 10:56:34,764:3237 unique sequences left following deblurring
+INFO(140188625807168)2025-03-13 10:56:34,816:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(139718191679296)2025-03-13 10:56:37,171:deblurring 3223 sequences
+INFO(140188625807168)2025-03-13 10:56:39,879:finished processing file
+INFO(140188625807168)2025-03-13 10:56:39,885:finished processing per sample fasta files
+INFO(140188625807168)2025-03-13 10:56:39,885:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz finished
+INFO(139759320397632)2025-03-13 10:56:41,726:deblurring 2525 sequences
+INFO(140203743160128)2025-03-13 10:56:43,562:*************************
+INFO(140203743160128)2025-03-13 10:56:43,563:deblurring started
+WARNING(140203743160128)2025-03-13 10:56:43,564:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz
+WARNING(140203743160128)2025-03-13 10:56:43,564:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140203743160128)2025-03-13 10:56:43,564:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140203743160128)2025-03-13 10:56:43,564:deblur worker thread started
+INFO(140203743160128)2025-03-13 10:56:43,564:processing per sample fasta files
+INFO(140203743160128)2025-03-13 10:56:43,564:--------------------------------------------------------
+INFO(140203743160128)2025-03-13 10:56:43,564:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz
+INFO(140203743160128)2025-03-13 10:56:49,603:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim
+INFO(140203743160128)2025-03-13 10:56:49,723:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim.derep
+INFO(140203743160128)2025-03-13 10:56:50,322:total sequences 3794, passing sequences 3794, failing sequences 0
+INFO(140203743160128)2025-03-13 10:56:50,322:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139759320397632)2025-03-13 10:56:51,952:2107 unique sequences left following deblurring
+INFO(139759320397632)2025-03-13 10:56:51,972:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(140112725817152)2025-03-13 10:56:53,281:3199 unique sequences left following deblurring
+INFO(140112725817152)2025-03-13 10:56:53,318:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(139718191679296)2025-03-13 10:56:54,165:2636 unique sequences left following deblurring
+INFO(139718191679296)2025-03-13 10:56:54,202:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(139759320397632)2025-03-13 10:56:55,150:finished processing file
+INFO(139759320397632)2025-03-13 10:56:55,154:finished processing per sample fasta files
+INFO(139759320397632)2025-03-13 10:56:55,154:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz finished
+INFO(140135617156928)2025-03-13 10:56:58,453:*************************
+INFO(140135617156928)2025-03-13 10:56:58,454:deblurring started
+WARNING(140135617156928)2025-03-13 10:56:58,455:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz
+WARNING(140135617156928)2025-03-13 10:56:58,455:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140135617156928)2025-03-13 10:56:58,455:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140135617156928)2025-03-13 10:56:58,455:deblur worker thread started
+INFO(140135617156928)2025-03-13 10:56:58,455:processing per sample fasta files
+INFO(140135617156928)2025-03-13 10:56:58,455:--------------------------------------------------------
+INFO(140135617156928)2025-03-13 10:56:58,455:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz
+INFO(139718191679296)2025-03-13 10:56:58,591:finished processing file
+INFO(139718191679296)2025-03-13 10:56:58,597:finished processing per sample fasta files
+INFO(139718191679296)2025-03-13 10:56:58,597:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz finished
+INFO(140112725817152)2025-03-13 10:56:58,676:finished processing file
+INFO(140112725817152)2025-03-13 10:56:58,682:finished processing per sample fasta files
+INFO(140112725817152)2025-03-13 10:56:58,683:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz finished
+INFO(140052727846720)2025-03-13 10:57:00,660:*************************
+INFO(140052727846720)2025-03-13 10:57:00,661:deblurring started
+WARNING(140052727846720)2025-03-13 10:57:00,661:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz
+WARNING(140052727846720)2025-03-13 10:57:00,661:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpfqx3_rgu', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpfqx3_rgu/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140052727846720)2025-03-13 10:57:00,661:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140052727846720)2025-03-13 10:57:00,661:deblur worker thread started
+INFO(140052727846720)2025-03-13 10:57:00,661:processing per sample fasta files
+INFO(140052727846720)2025-03-13 10:57:00,661:--------------------------------------------------------
+INFO(140052727846720)2025-03-13 10:57:00,661:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz
+INFO(140135617156928)2025-03-13 10:57:05,801:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim
+INFO(140135617156928)2025-03-13 10:57:05,908:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim.derep
+INFO(140052727846720)2025-03-13 10:57:05,923:dereplicate seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim
+INFO(140052727846720)2025-03-13 10:57:06,007:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim.derep
+INFO(140135617156928)2025-03-13 10:57:06,486:total sequences 3727, passing sequences 3727, failing sequences 0
+INFO(140135617156928)2025-03-13 10:57:06,486:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140052727846720)2025-03-13 10:57:06,547:total sequences 3089, passing sequences 3089, failing sequences 0
+INFO(140052727846720)2025-03-13 10:57:06,547:multiple_sequence_alignment seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140203743160128)2025-03-13 10:57:23,435:deblurring 3794 sequences
+INFO(140052727846720)2025-03-13 10:57:28,713:deblurring 3089 sequences
+INFO(140135617156928)2025-03-13 10:57:35,708:deblurring 3727 sequences
+INFO(140052727846720)2025-03-13 10:57:43,669:2500 unique sequences left following deblurring
+INFO(140052727846720)2025-03-13 10:57:43,708:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(140203743160128)2025-03-13 10:57:45,925:3083 unique sequences left following deblurring
+INFO(140203743160128)2025-03-13 10:57:45,960:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(140052727846720)2025-03-13 10:57:47,541:finished processing file
+INFO(140052727846720)2025-03-13 10:57:47,544:finished processing per sample fasta files
+INFO(140052727846720)2025-03-13 10:57:47,545:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz finished
+INFO(140203743160128)2025-03-13 10:57:50,758:finished processing file
+INFO(140203743160128)2025-03-13 10:57:50,769:finished processing per sample fasta files
+INFO(140203743160128)2025-03-13 10:57:50,769:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz finished
+INFO(140135617156928)2025-03-13 10:57:55,440:2691 unique sequences left following deblurring
+INFO(140135617156928)2025-03-13 10:57:55,484:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpfqx3_rgu/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpfqx3_rgu/deblur_working_dir
+INFO(140135617156928)2025-03-13 10:57:59,640:finished processing file
+INFO(140135617156928)2025-03-13 10:57:59,644:finished processing per sample fasta files
+INFO(140135617156928)2025-03-13 10:57:59,644:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz finished
+INFO(139844425688896)2025-03-13 10:58:00,059:create_otu_table for 12 samples, into output table /tmp/tmpfqx3_rgu/all.biom
+INFO(139844425688896)2025-03-13 10:58:00,943:for output biom table loaded 12 samples, 20242 unique sequences
+INFO(139844425688896)2025-03-13 10:58:00,957:keeping 20242 (out of 20242 sequences) with >=1 reads
+INFO(139844425688896)2025-03-13 10:58:01,264:saved to biom file /tmp/tmpfqx3_rgu/all.biom
+INFO(139844425688896)2025-03-13 10:58:01,354:saved sequence fasta file to /tmp/tmpfqx3_rgu/all.seqs.fa
+INFO(139844425688896)2025-03-13 10:58:01,376:getting 16s sequences from the biom table
+INFO(139844425688896)2025-03-13 10:58:01,376:remove_artifacts_seqs file /tmp/tmpfqx3_rgu/all.seqs.fa
+INFO(139844425688896)2025-03-13 10:59:23,943:total sequences 20242, passing sequences 20228, failing sequences 14
+WARNING(139844425688896)2025-03-13 10:59:24,374:removed 5 samples with reads per sample<1
+INFO(139844425688896)2025-03-13 10:59:24,387:wrote artifact only filtered biom table to /tmp/tmpfqx3_rgu/reference-non-hit.biom
+INFO(139844425688896)2025-03-13 10:59:24,388:saved biom table sequences to fasta file /tmp/tmpfqx3_rgu/reference-non-hit.seqs.fa
+INFO(139844425688896)2025-03-13 10:59:24,552:wrote 16s filtered biom table to /tmp/tmpfqx3_rgu/reference-hit.biom
+INFO(139844425688896)2025-03-13 10:59:24,639:saved biom table sequences to fasta file /tmp/tmpfqx3_rgu/reference-hit.seqs.fa
+INFO(139844425688896)2025-03-13 10:59:24,645:Keeping temp files
+INFO(139844425688896)2025-03-13 10:59:24,645:deblur workflow finished
+INFO(139844425688896)2025-03-13 10:59:24,645:output saved to /tmp/tmpfqx3_rgu/all.biom
+INFO(139844425688896)2025-03-13 10:59:24,645:------------------
+INFO(140078720436032)2025-03-13 14:06:15,635:*************************
+INFO(140078720436032)2025-03-13 14:06:15,651:deblurring started
+WARNING(140078720436032)2025-03-13 14:06:15,652:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data
+WARNING(140078720436032)2025-03-13 14:06:15,652:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 4, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(140078720436032)2025-03-13 14:06:15,652:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140078720436032)2025-03-13 14:06:15,652:deblur main program started
+INFO(140078720436032)2025-03-13 14:06:15,653:processing directory /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data
+INFO(140078720436032)2025-03-13 14:06:15,654:building negative db sortmerna index files
+INFO(140078720436032)2025-03-13 14:06:15,654:build_index_sortmerna files ['/jet/home/jparedesmontero/.conda/envs/qiime2-amplicon-2024.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(140078720436032)2025-03-13 14:06:15,732:building positive db sortmerna index files
+INFO(140078720436032)2025-03-13 14:06:15,733:build_index_sortmerna files ['/jet/home/jparedesmontero/.conda/envs/qiime2-amplicon-2024.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(140078720436032)2025-03-13 14:07:04,932:parallel processing per sample fasta files
+INFO(140078720436032)2025-03-13 14:07:04,942:parallel deblur started for 12 inputs
+INFO(140629238519616)2025-03-13 14:07:09,064:*************************
+INFO(140103596595008)2025-03-13 14:07:09,064:*************************
+INFO(139966513350464)2025-03-13 14:07:09,064:*************************
+INFO(140500432136000)2025-03-13 14:07:09,064:*************************
+INFO(140629238519616)2025-03-13 14:07:09,065:deblurring started
+INFO(140103596595008)2025-03-13 14:07:09,065:deblurring started
+INFO(139966513350464)2025-03-13 14:07:09,065:deblurring started
+INFO(140500432136000)2025-03-13 14:07:09,065:deblurring started
+WARNING(139966513350464)2025-03-13 14:07:09,066:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz
+WARNING(140103596595008)2025-03-13 14:07:09,066:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz
+WARNING(140629238519616)2025-03-13 14:07:09,066:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz
+WARNING(140500432136000)2025-03-13 14:07:09,066:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz
+WARNING(139966513350464)2025-03-13 14:07:09,066:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+WARNING(140103596595008)2025-03-13 14:07:09,066:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+WARNING(140629238519616)2025-03-13 14:07:09,066:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139966513350464)2025-03-13 14:07:09,066:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+WARNING(140500432136000)2025-03-13 14:07:09,066:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140103596595008)2025-03-13 14:07:09,066:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140629238519616)2025-03-13 14:07:09,066:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139966513350464)2025-03-13 14:07:09,066:deblur worker thread started
+INFO(140103596595008)2025-03-13 14:07:09,066:deblur worker thread started
+INFO(140500432136000)2025-03-13 14:07:09,066:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140629238519616)2025-03-13 14:07:09,066:deblur worker thread started
+INFO(139966513350464)2025-03-13 14:07:09,066:processing per sample fasta files
+INFO(140103596595008)2025-03-13 14:07:09,066:processing per sample fasta files
+INFO(140629238519616)2025-03-13 14:07:09,066:processing per sample fasta files
+INFO(140500432136000)2025-03-13 14:07:09,066:deblur worker thread started
+INFO(139966513350464)2025-03-13 14:07:09,066:--------------------------------------------------------
+INFO(140103596595008)2025-03-13 14:07:09,066:--------------------------------------------------------
+INFO(140629238519616)2025-03-13 14:07:09,066:--------------------------------------------------------
+INFO(140500432136000)2025-03-13 14:07:09,066:processing per sample fasta files
+INFO(139966513350464)2025-03-13 14:07:09,066:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz
+INFO(140103596595008)2025-03-13 14:07:09,066:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz
+INFO(140629238519616)2025-03-13 14:07:09,066:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz
+INFO(140500432136000)2025-03-13 14:07:09,066:--------------------------------------------------------
+INFO(140500432136000)2025-03-13 14:07:09,066:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz
+INFO(140103596595008)2025-03-13 14:07:12,843:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim
+INFO(140103596595008)2025-03-13 14:07:12,926:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim.derep
+INFO(140103596595008)2025-03-13 14:07:13,447:total sequences 2272, passing sequences 2272, failing sequences 0
+INFO(140103596595008)2025-03-13 14:07:13,447:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139966513350464)2025-03-13 14:07:13,577:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim
+INFO(139966513350464)2025-03-13 14:07:13,667:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim.derep
+INFO(139966513350464)2025-03-13 14:07:14,216:total sequences 3170, passing sequences 3170, failing sequences 0
+INFO(139966513350464)2025-03-13 14:07:14,216:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140500432136000)2025-03-13 14:07:14,976:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim
+INFO(140500432136000)2025-03-13 14:07:15,074:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim.derep
+INFO(140629238519616)2025-03-13 14:07:15,283:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim
+INFO(140629238519616)2025-03-13 14:07:15,383:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim.derep
+INFO(140500432136000)2025-03-13 14:07:15,649:total sequences 3178, passing sequences 3178, failing sequences 0
+INFO(140500432136000)2025-03-13 14:07:15,649:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140629238519616)2025-03-13 14:07:15,979:total sequences 3875, passing sequences 3875, failing sequences 0
+INFO(140629238519616)2025-03-13 14:07:15,979:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140103596595008)2025-03-13 14:07:26,821:deblurring 2272 sequences
+INFO(140103596595008)2025-03-13 14:07:35,060:1826 unique sequences left following deblurring
+INFO(140103596595008)2025-03-13 14:07:35,094:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(139966513350464)2025-03-13 14:07:36,989:deblurring 3170 sequences
+INFO(140103596595008)2025-03-13 14:07:37,887:finished processing file
+INFO(140103596595008)2025-03-13 14:07:37,897:finished processing per sample fasta files
+INFO(140103596595008)2025-03-13 14:07:37,898:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz finished
+INFO(140500432136000)2025-03-13 14:07:41,043:deblurring 3178 sequences
+INFO(140038842259264)2025-03-13 14:07:41,958:*************************
+INFO(140038842259264)2025-03-13 14:07:41,959:deblurring started
+WARNING(140038842259264)2025-03-13 14:07:41,960:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz
+WARNING(140038842259264)2025-03-13 14:07:41,960:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140038842259264)2025-03-13 14:07:41,960:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140038842259264)2025-03-13 14:07:41,961:deblur worker thread started
+INFO(140038842259264)2025-03-13 14:07:41,961:processing per sample fasta files
+INFO(140038842259264)2025-03-13 14:07:41,961:--------------------------------------------------------
+INFO(140038842259264)2025-03-13 14:07:41,961:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz
+INFO(140038842259264)2025-03-13 14:07:47,765:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim
+INFO(140038842259264)2025-03-13 14:07:47,867:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim.derep
+INFO(140038842259264)2025-03-13 14:07:48,460:total sequences 4039, passing sequences 4039, failing sequences 0
+INFO(140038842259264)2025-03-13 14:07:48,460:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140629238519616)2025-03-13 14:07:49,292:deblurring 3875 sequences
+INFO(139966513350464)2025-03-13 14:07:53,278:2558 unique sequences left following deblurring
+INFO(139966513350464)2025-03-13 14:07:53,304:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(140500432136000)2025-03-13 14:07:53,783:2059 unique sequences left following deblurring
+INFO(140500432136000)2025-03-13 14:07:53,815:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(140500432136000)2025-03-13 14:07:57,018:finished processing file
+INFO(140500432136000)2025-03-13 14:07:57,022:finished processing per sample fasta files
+INFO(140500432136000)2025-03-13 14:07:57,022:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz finished
+INFO(139966513350464)2025-03-13 14:07:57,253:finished processing file
+INFO(139966513350464)2025-03-13 14:07:57,258:finished processing per sample fasta files
+INFO(139966513350464)2025-03-13 14:07:57,258:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz finished
+INFO(140240035497792)2025-03-13 14:08:00,853:*************************
+INFO(139684466882368)2025-03-13 14:08:00,853:*************************
+INFO(140240035497792)2025-03-13 14:08:00,853:deblurring started
+INFO(139684466882368)2025-03-13 14:08:00,853:deblurring started
+WARNING(139684466882368)2025-03-13 14:08:00,854:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz
+WARNING(140240035497792)2025-03-13 14:08:00,854:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz
+WARNING(139684466882368)2025-03-13 14:08:00,854:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+WARNING(140240035497792)2025-03-13 14:08:00,854:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139684466882368)2025-03-13 14:08:00,854:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140240035497792)2025-03-13 14:08:00,854:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139684466882368)2025-03-13 14:08:00,854:deblur worker thread started
+INFO(140240035497792)2025-03-13 14:08:00,854:deblur worker thread started
+INFO(139684466882368)2025-03-13 14:08:00,854:processing per sample fasta files
+INFO(140240035497792)2025-03-13 14:08:00,855:processing per sample fasta files
+INFO(139684466882368)2025-03-13 14:08:00,855:--------------------------------------------------------
+INFO(140240035497792)2025-03-13 14:08:00,855:--------------------------------------------------------
+INFO(139684466882368)2025-03-13 14:08:00,855:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz
+INFO(140240035497792)2025-03-13 14:08:00,855:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz
+INFO(139684466882368)2025-03-13 14:08:05,980:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim
+INFO(139684466882368)2025-03-13 14:08:06,091:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim.derep
+INFO(139684466882368)2025-03-13 14:08:06,699:total sequences 2697, passing sequences 2697, failing sequences 0
+INFO(139684466882368)2025-03-13 14:08:06,701:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140240035497792)2025-03-13 14:08:07,958:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim
+INFO(140240035497792)2025-03-13 14:08:08,070:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim.derep
+INFO(140240035497792)2025-03-13 14:08:08,669:total sequences 4103, passing sequences 4103, failing sequences 0
+INFO(140240035497792)2025-03-13 14:08:08,669:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140629238519616)2025-03-13 14:08:14,501:3222 unique sequences left following deblurring
+INFO(140629238519616)2025-03-13 14:08:14,539:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(140629238519616)2025-03-13 14:08:19,482:finished processing file
+INFO(140629238519616)2025-03-13 14:08:19,486:finished processing per sample fasta files
+INFO(140629238519616)2025-03-13 14:08:19,486:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz finished
+INFO(140541013051200)2025-03-13 14:08:22,566:*************************
+INFO(140541013051200)2025-03-13 14:08:22,566:deblurring started
+WARNING(140541013051200)2025-03-13 14:08:22,566:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz
+WARNING(140541013051200)2025-03-13 14:08:22,566:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140541013051200)2025-03-13 14:08:22,567:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140541013051200)2025-03-13 14:08:22,567:deblur worker thread started
+INFO(140541013051200)2025-03-13 14:08:22,567:processing per sample fasta files
+INFO(140541013051200)2025-03-13 14:08:22,567:--------------------------------------------------------
+INFO(140541013051200)2025-03-13 14:08:22,567:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz
+INFO(140038842259264)2025-03-13 14:08:24,197:deblurring 4039 sequences
+INFO(139684466882368)2025-03-13 14:08:24,726:deblurring 2697 sequences
+INFO(140541013051200)2025-03-13 14:08:28,636:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim
+INFO(140541013051200)2025-03-13 14:08:28,755:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim.derep
+INFO(140541013051200)2025-03-13 14:08:29,324:total sequences 3223, passing sequences 3223, failing sequences 0
+INFO(140541013051200)2025-03-13 14:08:29,325:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139684466882368)2025-03-13 14:08:35,355:2013 unique sequences left following deblurring
+INFO(139684466882368)2025-03-13 14:08:35,385:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(139684466882368)2025-03-13 14:08:38,438:finished processing file
+INFO(139684466882368)2025-03-13 14:08:38,441:finished processing per sample fasta files
+INFO(139684466882368)2025-03-13 14:08:38,441:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz finished
+INFO(140490267752256)2025-03-13 14:08:41,613:*************************
+INFO(140490267752256)2025-03-13 14:08:41,614:deblurring started
+WARNING(140490267752256)2025-03-13 14:08:41,614:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz
+WARNING(140490267752256)2025-03-13 14:08:41,614:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140490267752256)2025-03-13 14:08:41,614:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140490267752256)2025-03-13 14:08:41,614:deblur worker thread started
+INFO(140490267752256)2025-03-13 14:08:41,615:processing per sample fasta files
+INFO(140490267752256)2025-03-13 14:08:41,615:--------------------------------------------------------
+INFO(140490267752256)2025-03-13 14:08:41,615:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz
+INFO(140240035497792)2025-03-13 14:08:44,117:deblurring 4103 sequences
+INFO(140490267752256)2025-03-13 14:08:45,517:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim
+INFO(140490267752256)2025-03-13 14:08:45,587:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim.derep
+INFO(140490267752256)2025-03-13 14:08:46,103:total sequences 2525, passing sequences 2525, failing sequences 0
+INFO(140490267752256)2025-03-13 14:08:46,103:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140038842259264)2025-03-13 14:08:50,851:3237 unique sequences left following deblurring
+INFO(140038842259264)2025-03-13 14:08:50,891:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(140541013051200)2025-03-13 14:08:53,120:deblurring 3223 sequences
+INFO(140038842259264)2025-03-13 14:08:55,877:finished processing file
+INFO(140038842259264)2025-03-13 14:08:55,883:finished processing per sample fasta files
+INFO(140038842259264)2025-03-13 14:08:55,883:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz finished
+INFO(139747709548352)2025-03-13 14:08:57,698:*************************
+INFO(139747709548352)2025-03-13 14:08:57,698:deblurring started
+WARNING(139747709548352)2025-03-13 14:08:57,699:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz
+WARNING(139747709548352)2025-03-13 14:08:57,699:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139747709548352)2025-03-13 14:08:57,699:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139747709548352)2025-03-13 14:08:57,699:deblur worker thread started
+INFO(139747709548352)2025-03-13 14:08:57,699:processing per sample fasta files
+INFO(139747709548352)2025-03-13 14:08:57,699:--------------------------------------------------------
+INFO(139747709548352)2025-03-13 14:08:57,699:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz
+INFO(140490267752256)2025-03-13 14:09:02,158:deblurring 2525 sequences
+INFO(139747709548352)2025-03-13 14:09:03,663:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim
+INFO(139747709548352)2025-03-13 14:09:03,771:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim.derep
+INFO(139747709548352)2025-03-13 14:09:04,352:total sequences 3794, passing sequences 3794, failing sequences 0
+INFO(139747709548352)2025-03-13 14:09:04,352:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140240035497792)2025-03-13 14:09:09,868:3199 unique sequences left following deblurring
+INFO(140240035497792)2025-03-13 14:09:09,903:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(140541013051200)2025-03-13 14:09:10,290:2636 unique sequences left following deblurring
+INFO(140541013051200)2025-03-13 14:09:10,319:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(140490267752256)2025-03-13 14:09:12,605:2107 unique sequences left following deblurring
+INFO(140490267752256)2025-03-13 14:09:12,625:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(140541013051200)2025-03-13 14:09:14,356:finished processing file
+INFO(140541013051200)2025-03-13 14:09:14,360:finished processing per sample fasta files
+INFO(140541013051200)2025-03-13 14:09:14,360:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz finished
+INFO(140240035497792)2025-03-13 14:09:15,258:finished processing file
+INFO(140240035497792)2025-03-13 14:09:15,263:finished processing per sample fasta files
+INFO(140240035497792)2025-03-13 14:09:15,263:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz finished
+INFO(140490267752256)2025-03-13 14:09:16,555:finished processing file
+INFO(140490267752256)2025-03-13 14:09:16,558:finished processing per sample fasta files
+INFO(140490267752256)2025-03-13 14:09:16,559:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz finished
+INFO(139864068720448)2025-03-13 14:09:16,588:*************************
+INFO(139864068720448)2025-03-13 14:09:16,588:deblurring started
+WARNING(139864068720448)2025-03-13 14:09:16,588:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz
+WARNING(139864068720448)2025-03-13 14:09:16,589:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139864068720448)2025-03-13 14:09:16,589:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139864068720448)2025-03-13 14:09:16,589:deblur worker thread started
+INFO(139864068720448)2025-03-13 14:09:16,589:processing per sample fasta files
+INFO(139864068720448)2025-03-13 14:09:16,589:--------------------------------------------------------
+INFO(139864068720448)2025-03-13 14:09:16,589:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz
+INFO(139686531446592)2025-03-13 14:09:16,984:*************************
+INFO(139686531446592)2025-03-13 14:09:16,984:deblurring started
+WARNING(139686531446592)2025-03-13 14:09:16,984:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz
+WARNING(139686531446592)2025-03-13 14:09:16,984:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmpbpxrdvun', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmpbpxrdvun/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139686531446592)2025-03-13 14:09:16,984:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139686531446592)2025-03-13 14:09:16,985:deblur worker thread started
+INFO(139686531446592)2025-03-13 14:09:16,985:processing per sample fasta files
+INFO(139686531446592)2025-03-13 14:09:16,985:--------------------------------------------------------
+INFO(139686531446592)2025-03-13 14:09:16,985:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz
+INFO(139686531446592)2025-03-13 14:09:22,206:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim
+INFO(139686531446592)2025-03-13 14:09:22,288:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim.derep
+INFO(139686531446592)2025-03-13 14:09:22,824:total sequences 3089, passing sequences 3089, failing sequences 0
+INFO(139686531446592)2025-03-13 14:09:22,824:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139864068720448)2025-03-13 14:09:23,527:dereplicate seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim
+INFO(139864068720448)2025-03-13 14:09:23,637:remove_artifacts_seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim.derep
+INFO(139864068720448)2025-03-13 14:09:24,215:total sequences 3727, passing sequences 3727, failing sequences 0
+INFO(139864068720448)2025-03-13 14:09:24,216:multiple_sequence_alignment seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139747709548352)2025-03-13 14:09:35,521:deblurring 3794 sequences
+INFO(139686531446592)2025-03-13 14:09:44,678:deblurring 3089 sequences
+INFO(139864068720448)2025-03-13 14:09:53,390:deblurring 3727 sequences
+INFO(139747709548352)2025-03-13 14:09:58,626:3083 unique sequences left following deblurring
+INFO(139747709548352)2025-03-13 14:09:58,657:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(139686531446592)2025-03-13 14:09:59,773:2500 unique sequences left following deblurring
+INFO(139686531446592)2025-03-13 14:09:59,801:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(139747709548352)2025-03-13 14:10:03,408:finished processing file
+INFO(139747709548352)2025-03-13 14:10:03,413:finished processing per sample fasta files
+INFO(139747709548352)2025-03-13 14:10:03,413:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz finished
+INFO(139686531446592)2025-03-13 14:10:03,616:finished processing file
+INFO(139686531446592)2025-03-13 14:10:03,620:finished processing per sample fasta files
+INFO(139686531446592)2025-03-13 14:10:03,620:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz finished
+INFO(139864068720448)2025-03-13 14:10:13,320:2691 unique sequences left following deblurring
+INFO(139864068720448)2025-03-13 14:10:13,351:remove_chimeras_denovo_from_seqs seqs file /tmp/tmpbpxrdvun/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmpbpxrdvun/deblur_working_dir
+INFO(139864068720448)2025-03-13 14:10:17,463:finished processing file
+INFO(139864068720448)2025-03-13 14:10:17,467:finished processing per sample fasta files
+INFO(139864068720448)2025-03-13 14:10:17,468:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz finished
+INFO(140078720436032)2025-03-13 14:10:17,694:create_otu_table for 12 samples, into output table /tmp/tmpbpxrdvun/all.biom
+INFO(140078720436032)2025-03-13 14:10:18,587:for output biom table loaded 12 samples, 20242 unique sequences
+INFO(140078720436032)2025-03-13 14:10:18,600:keeping 20242 (out of 20242 sequences) with >=1 reads
+INFO(140078720436032)2025-03-13 14:10:18,893:saved to biom file /tmp/tmpbpxrdvun/all.biom
+INFO(140078720436032)2025-03-13 14:10:18,959:saved sequence fasta file to /tmp/tmpbpxrdvun/all.seqs.fa
+INFO(140078720436032)2025-03-13 14:10:18,967:getting 16s sequences from the biom table
+INFO(140078720436032)2025-03-13 14:10:18,968:remove_artifacts_seqs file /tmp/tmpbpxrdvun/all.seqs.fa
+INFO(140078720436032)2025-03-13 14:11:39,684:total sequences 20242, passing sequences 20228, failing sequences 14
+WARNING(140078720436032)2025-03-13 14:11:40,074:removed 5 samples with reads per sample<1
+INFO(140078720436032)2025-03-13 14:11:40,082:wrote artifact only filtered biom table to /tmp/tmpbpxrdvun/reference-non-hit.biom
+INFO(140078720436032)2025-03-13 14:11:40,082:saved biom table sequences to fasta file /tmp/tmpbpxrdvun/reference-non-hit.seqs.fa
+INFO(140078720436032)2025-03-13 14:11:40,252:wrote 16s filtered biom table to /tmp/tmpbpxrdvun/reference-hit.biom
+INFO(140078720436032)2025-03-13 14:11:40,334:saved biom table sequences to fasta file /tmp/tmpbpxrdvun/reference-hit.seqs.fa
+INFO(140078720436032)2025-03-13 14:11:40,339:Keeping temp files
+INFO(140078720436032)2025-03-13 14:11:40,339:deblur workflow finished
+INFO(140078720436032)2025-03-13 14:11:40,339:output saved to /tmp/tmpbpxrdvun/all.biom
+INFO(140078720436032)2025-03-13 14:11:40,339:------------------
+INFO(140304930457408)2025-03-13 14:30:41,481:*************************
+INFO(140304930457408)2025-03-13 14:30:41,481:deblurring started
+WARNING(140304930457408)2025-03-13 14:30:41,481:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data
+WARNING(140304930457408)2025-03-13 14:30:41,481:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 4, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(140304930457408)2025-03-13 14:30:41,481:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140304930457408)2025-03-13 14:30:41,482:deblur main program started
+INFO(140304930457408)2025-03-13 14:30:41,482:processing directory /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data
+INFO(140304930457408)2025-03-13 14:30:41,483:building negative db sortmerna index files
+INFO(140304930457408)2025-03-13 14:30:41,483:build_index_sortmerna files ['/jet/home/jparedesmontero/.conda/envs/qiime2-amplicon-2024.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(140304930457408)2025-03-13 14:30:41,546:building positive db sortmerna index files
+INFO(140304930457408)2025-03-13 14:30:41,546:build_index_sortmerna files ['/jet/home/jparedesmontero/.conda/envs/qiime2-amplicon-2024.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(140304930457408)2025-03-13 14:31:26,577:parallel processing per sample fasta files
+INFO(140304930457408)2025-03-13 14:31:26,578:parallel deblur started for 12 inputs
+INFO(140525646251840)2025-03-13 14:31:28,784:*************************
+INFO(140525646251840)2025-03-13 14:31:28,784:deblurring started
+WARNING(140525646251840)2025-03-13 14:31:28,784:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz
+WARNING(140525646251840)2025-03-13 14:31:28,785:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140525646251840)2025-03-13 14:31:28,785:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140525646251840)2025-03-13 14:31:28,785:deblur worker thread started
+INFO(140525646251840)2025-03-13 14:31:28,785:processing per sample fasta files
+INFO(140525646251840)2025-03-13 14:31:28,785:--------------------------------------------------------
+INFO(140525646251840)2025-03-13 14:31:28,785:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz
+INFO(140716327360320)2025-03-13 14:31:28,797:*************************
+INFO(140716327360320)2025-03-13 14:31:28,797:deblurring started
+WARNING(140716327360320)2025-03-13 14:31:28,798:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz
+WARNING(140716327360320)2025-03-13 14:31:28,798:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140716327360320)2025-03-13 14:31:28,798:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140716327360320)2025-03-13 14:31:28,798:deblur worker thread started
+INFO(140716327360320)2025-03-13 14:31:28,798:processing per sample fasta files
+INFO(140716327360320)2025-03-13 14:31:28,798:--------------------------------------------------------
+INFO(140716327360320)2025-03-13 14:31:28,798:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz
+INFO(140093719848768)2025-03-13 14:31:28,805:*************************
+INFO(140093719848768)2025-03-13 14:31:28,805:deblurring started
+WARNING(140093719848768)2025-03-13 14:31:28,806:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz
+WARNING(140093719848768)2025-03-13 14:31:28,806:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140093719848768)2025-03-13 14:31:28,806:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140093719848768)2025-03-13 14:31:28,806:deblur worker thread started
+INFO(140093719848768)2025-03-13 14:31:28,806:processing per sample fasta files
+INFO(140093719848768)2025-03-13 14:31:28,806:--------------------------------------------------------
+INFO(140093719848768)2025-03-13 14:31:28,806:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz
+INFO(140208559216448)2025-03-13 14:31:28,811:*************************
+INFO(140208559216448)2025-03-13 14:31:28,812:deblurring started
+WARNING(140208559216448)2025-03-13 14:31:28,812:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz
+WARNING(140208559216448)2025-03-13 14:31:28,812:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140208559216448)2025-03-13 14:31:28,812:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140208559216448)2025-03-13 14:31:28,812:deblur worker thread started
+INFO(140208559216448)2025-03-13 14:31:28,812:processing per sample fasta files
+INFO(140208559216448)2025-03-13 14:31:28,812:--------------------------------------------------------
+INFO(140208559216448)2025-03-13 14:31:28,812:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz
+INFO(140716327360320)2025-03-13 14:31:32,660:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim
+INFO(140716327360320)2025-03-13 14:31:32,725:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim.derep
+INFO(140716327360320)2025-03-13 14:31:33,226:total sequences 2272, passing sequences 2272, failing sequences 0
+INFO(140716327360320)2025-03-13 14:31:33,226:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140525646251840)2025-03-13 14:31:33,348:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim
+INFO(140525646251840)2025-03-13 14:31:33,436:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim.derep
+INFO(140525646251840)2025-03-13 14:31:33,984:total sequences 3170, passing sequences 3170, failing sequences 0
+INFO(140525646251840)2025-03-13 14:31:33,985:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140093719848768)2025-03-13 14:31:34,599:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim
+INFO(140093719848768)2025-03-13 14:31:34,691:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim.derep
+INFO(140208559216448)2025-03-13 14:31:35,102:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim
+INFO(140093719848768)2025-03-13 14:31:35,238:total sequences 3178, passing sequences 3178, failing sequences 0
+INFO(140093719848768)2025-03-13 14:31:35,449:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140208559216448)2025-03-13 14:31:35,544:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim.derep
+INFO(140208559216448)2025-03-13 14:31:36,142:total sequences 3875, passing sequences 3875, failing sequences 0
+INFO(140208559216448)2025-03-13 14:31:36,142:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140716327360320)2025-03-13 14:31:46,288:deblurring 2272 sequences
+INFO(140716327360320)2025-03-13 14:31:54,307:1826 unique sequences left following deblurring
+INFO(140716327360320)2025-03-13 14:31:54,324:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB198_5_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(140525646251840)2025-03-13 14:31:56,095:deblurring 3170 sequences
+INFO(140093719848768)2025-03-13 14:31:57,022:deblurring 3178 sequences
+INFO(140716327360320)2025-03-13 14:31:57,126:finished processing file
+INFO(140716327360320)2025-03-13 14:31:57,131:finished processing per sample fasta files
+INFO(140716327360320)2025-03-13 14:31:57,131:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB198_5_L001_R1_001.fastq.gz finished
+INFO(140463868360512)2025-03-13 14:31:59,025:*************************
+INFO(140463868360512)2025-03-13 14:31:59,025:deblurring started
+WARNING(140463868360512)2025-03-13 14:31:59,026:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz
+WARNING(140463868360512)2025-03-13 14:31:59,026:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140463868360512)2025-03-13 14:31:59,026:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140463868360512)2025-03-13 14:31:59,026:deblur worker thread started
+INFO(140463868360512)2025-03-13 14:31:59,026:processing per sample fasta files
+INFO(140463868360512)2025-03-13 14:31:59,026:--------------------------------------------------------
+INFO(140463868360512)2025-03-13 14:31:59,026:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz
+INFO(140463868360512)2025-03-13 14:32:04,863:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim
+INFO(140463868360512)2025-03-13 14:32:04,961:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim.derep
+INFO(140463868360512)2025-03-13 14:32:05,578:total sequences 4039, passing sequences 4039, failing sequences 0
+INFO(140463868360512)2025-03-13 14:32:05,579:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140208559216448)2025-03-13 14:32:09,122:deblurring 3875 sequences
+INFO(140093719848768)2025-03-13 14:32:10,134:2059 unique sequences left following deblurring
+INFO(140093719848768)2025-03-13 14:32:10,156:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB204_8_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(140525646251840)2025-03-13 14:32:12,304:2558 unique sequences left following deblurring
+INFO(140525646251840)2025-03-13 14:32:12,328:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB197_4_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(140093719848768)2025-03-13 14:32:13,500:finished processing file
+INFO(140093719848768)2025-03-13 14:32:13,505:finished processing per sample fasta files
+INFO(140093719848768)2025-03-13 14:32:13,505:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB204_8_L001_R1_001.fastq.gz finished
+INFO(139742212478784)2025-03-13 14:32:15,312:*************************
+INFO(139742212478784)2025-03-13 14:32:15,312:deblurring started
+WARNING(139742212478784)2025-03-13 14:32:15,313:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz
+WARNING(139742212478784)2025-03-13 14:32:15,313:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139742212478784)2025-03-13 14:32:15,313:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139742212478784)2025-03-13 14:32:15,313:deblur worker thread started
+INFO(139742212478784)2025-03-13 14:32:15,313:processing per sample fasta files
+INFO(139742212478784)2025-03-13 14:32:15,313:--------------------------------------------------------
+INFO(139742212478784)2025-03-13 14:32:15,313:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz
+INFO(140525646251840)2025-03-13 14:32:16,589:finished processing file
+INFO(140525646251840)2025-03-13 14:32:16,593:finished processing per sample fasta files
+INFO(140525646251840)2025-03-13 14:32:16,593:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB197_4_L001_R1_001.fastq.gz finished
+INFO(139873818830656)2025-03-13 14:32:18,322:*************************
+INFO(139873818830656)2025-03-13 14:32:18,323:deblurring started
+WARNING(139873818830656)2025-03-13 14:32:18,323:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz
+WARNING(139873818830656)2025-03-13 14:32:18,323:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139873818830656)2025-03-13 14:32:18,323:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139873818830656)2025-03-13 14:32:18,323:deblur worker thread started
+INFO(139873818830656)2025-03-13 14:32:18,323:processing per sample fasta files
+INFO(139873818830656)2025-03-13 14:32:18,323:--------------------------------------------------------
+INFO(139873818830656)2025-03-13 14:32:18,323:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz
+INFO(139742212478784)2025-03-13 14:32:20,540:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim
+INFO(139742212478784)2025-03-13 14:32:20,623:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim.derep
+INFO(139742212478784)2025-03-13 14:32:21,149:total sequences 2697, passing sequences 2697, failing sequences 0
+INFO(139742212478784)2025-03-13 14:32:21,150:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139873818830656)2025-03-13 14:32:25,049:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim
+INFO(139873818830656)2025-03-13 14:32:25,162:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim.derep
+INFO(139873818830656)2025-03-13 14:32:25,783:total sequences 4103, passing sequences 4103, failing sequences 0
+INFO(139873818830656)2025-03-13 14:32:25,783:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140208559216448)2025-03-13 14:32:34,451:3222 unique sequences left following deblurring
+INFO(140208559216448)2025-03-13 14:32:34,489:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB190_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(139742212478784)2025-03-13 14:32:38,386:deblurring 2697 sequences
+INFO(140208559216448)2025-03-13 14:32:39,536:finished processing file
+INFO(140208559216448)2025-03-13 14:32:39,541:finished processing per sample fasta files
+INFO(140208559216448)2025-03-13 14:32:39,541:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB190_0_L001_R1_001.fastq.gz finished
+INFO(140463868360512)2025-03-13 14:32:41,143:deblurring 4039 sequences
+INFO(140234452219712)2025-03-13 14:32:41,327:*************************
+INFO(140234452219712)2025-03-13 14:32:41,327:deblurring started
+WARNING(140234452219712)2025-03-13 14:32:41,328:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz
+WARNING(140234452219712)2025-03-13 14:32:41,328:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140234452219712)2025-03-13 14:32:41,328:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140234452219712)2025-03-13 14:32:41,328:deblur worker thread started
+INFO(140234452219712)2025-03-13 14:32:41,328:processing per sample fasta files
+INFO(140234452219712)2025-03-13 14:32:41,328:--------------------------------------------------------
+INFO(140234452219712)2025-03-13 14:32:41,328:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz
+INFO(140234452219712)2025-03-13 14:32:46,851:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim
+INFO(140234452219712)2025-03-13 14:32:46,936:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim.derep
+INFO(140234452219712)2025-03-13 14:32:47,480:total sequences 3223, passing sequences 3223, failing sequences 0
+INFO(140234452219712)2025-03-13 14:32:47,481:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139742212478784)2025-03-13 14:32:49,246:2013 unique sequences left following deblurring
+INFO(139742212478784)2025-03-13 14:32:49,266:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB209_11_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(139742212478784)2025-03-13 14:32:52,279:finished processing file
+INFO(139742212478784)2025-03-13 14:32:52,283:finished processing per sample fasta files
+INFO(139742212478784)2025-03-13 14:32:52,283:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB209_11_L001_R1_001.fastq.gz finished
+INFO(139644141692736)2025-03-13 14:32:54,013:*************************
+INFO(139644141692736)2025-03-13 14:32:54,013:deblurring started
+WARNING(139644141692736)2025-03-13 14:32:54,014:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz
+WARNING(139644141692736)2025-03-13 14:32:54,014:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139644141692736)2025-03-13 14:32:54,014:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139644141692736)2025-03-13 14:32:54,014:deblur worker thread started
+INFO(139644141692736)2025-03-13 14:32:54,014:processing per sample fasta files
+INFO(139644141692736)2025-03-13 14:32:54,014:--------------------------------------------------------
+INFO(139644141692736)2025-03-13 14:32:54,014:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz
+INFO(139644141692736)2025-03-13 14:32:57,884:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim
+INFO(139644141692736)2025-03-13 14:32:57,947:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim.derep
+INFO(139644141692736)2025-03-13 14:32:58,455:total sequences 2525, passing sequences 2525, failing sequences 0
+INFO(139644141692736)2025-03-13 14:32:58,455:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139873818830656)2025-03-13 14:33:01,199:deblurring 4103 sequences
+INFO(140463868360512)2025-03-13 14:33:07,321:3237 unique sequences left following deblurring
+INFO(140463868360512)2025-03-13 14:33:07,357:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB207_9_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(140234452219712)2025-03-13 14:33:11,382:deblurring 3223 sequences
+INFO(140463868360512)2025-03-13 14:33:12,486:finished processing file
+INFO(140463868360512)2025-03-13 14:33:12,492:finished processing per sample fasta files
+INFO(140463868360512)2025-03-13 14:33:12,492:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB207_9_L001_R1_001.fastq.gz finished
+INFO(139644141692736)2025-03-13 14:33:14,735:deblurring 2525 sequences
+INFO(140412800137024)2025-03-13 14:33:15,734:*************************
+INFO(140412800137024)2025-03-13 14:33:15,734:deblurring started
+WARNING(140412800137024)2025-03-13 14:33:15,734:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz
+WARNING(140412800137024)2025-03-13 14:33:15,734:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(140412800137024)2025-03-13 14:33:15,734:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140412800137024)2025-03-13 14:33:15,735:deblur worker thread started
+INFO(140412800137024)2025-03-13 14:33:15,735:processing per sample fasta files
+INFO(140412800137024)2025-03-13 14:33:15,735:--------------------------------------------------------
+INFO(140412800137024)2025-03-13 14:33:15,735:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz
+INFO(140412800137024)2025-03-13 14:33:21,686:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim
+INFO(140412800137024)2025-03-13 14:33:21,783:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim.derep
+INFO(140412800137024)2025-03-13 14:33:22,383:total sequences 3794, passing sequences 3794, failing sequences 0
+INFO(140412800137024)2025-03-13 14:33:22,384:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139644141692736)2025-03-13 14:33:25,098:2107 unique sequences left following deblurring
+INFO(139644141692736)2025-03-13 14:33:25,120:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB203_7_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(139873818830656)2025-03-13 14:33:27,443:3199 unique sequences left following deblurring
+INFO(139873818830656)2025-03-13 14:33:27,479:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB195_3_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(140234452219712)2025-03-13 14:33:28,294:2636 unique sequences left following deblurring
+INFO(139644141692736)2025-03-13 14:33:28,317:finished processing file
+INFO(139644141692736)2025-03-13 14:33:28,320:finished processing per sample fasta files
+INFO(139644141692736)2025-03-13 14:33:28,321:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB203_7_L001_R1_001.fastq.gz finished
+INFO(140234452219712)2025-03-13 14:33:28,324:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB192_2_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(139783352170304)2025-03-13 14:33:30,169:*************************
+INFO(139783352170304)2025-03-13 14:33:30,169:deblurring started
+WARNING(139783352170304)2025-03-13 14:33:30,170:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz
+WARNING(139783352170304)2025-03-13 14:33:30,170:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139783352170304)2025-03-13 14:33:30,170:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139783352170304)2025-03-13 14:33:30,170:deblur worker thread started
+INFO(139783352170304)2025-03-13 14:33:30,170:processing per sample fasta files
+INFO(139783352170304)2025-03-13 14:33:30,170:--------------------------------------------------------
+INFO(139783352170304)2025-03-13 14:33:30,170:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz
+INFO(140234452219712)2025-03-13 14:33:32,714:finished processing file
+INFO(140234452219712)2025-03-13 14:33:32,718:finished processing per sample fasta files
+INFO(140234452219712)2025-03-13 14:33:32,718:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB192_2_L001_R1_001.fastq.gz finished
+INFO(139873818830656)2025-03-13 14:33:32,872:finished processing file
+INFO(139873818830656)2025-03-13 14:33:32,877:finished processing per sample fasta files
+INFO(139873818830656)2025-03-13 14:33:32,877:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB195_3_L001_R1_001.fastq.gz finished
+INFO(139810688055104)2025-03-13 14:33:34,559:*************************
+INFO(139810688055104)2025-03-13 14:33:34,559:deblurring started
+WARNING(139810688055104)2025-03-13 14:33:34,560:deblur version 1.1.1 workflow started on /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz
+WARNING(139810688055104)2025-03-13 14:33:34,560:parameters: {'seqs_fp': '/tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz', 'output_dir': '/tmp/tmptgqyja3f', 'pos_ref_fp': (), 'pos_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/88_otus',), 'neg_ref_fp': (), 'neg_ref_db_fp': ('/tmp/tmptgqyja3f/deblur_working_dir/artifacts',), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 390, 'left_trim_length': 0, 'min_reads': 1, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/ocean/projects/agr250001p/jparedesmontero/week-7-repository/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': True, 'logger': <Logger __main__ (INFO)>}
+INFO(139810688055104)2025-03-13 14:33:34,560:error_dist is : [1.0, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139810688055104)2025-03-13 14:33:34,560:deblur worker thread started
+INFO(139810688055104)2025-03-13 14:33:34,560:processing per sample fasta files
+INFO(139810688055104)2025-03-13 14:33:34,560:--------------------------------------------------------
+INFO(139810688055104)2025-03-13 14:33:34,560:launch_workflow for file /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz
+INFO(139783352170304)2025-03-13 14:33:37,429:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim
+INFO(139783352170304)2025-03-13 14:33:37,539:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim.derep
+INFO(139783352170304)2025-03-13 14:33:38,119:total sequences 3727, passing sequences 3727, failing sequences 0
+INFO(139783352170304)2025-03-13 14:33:38,119:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139810688055104)2025-03-13 14:33:39,842:dereplicate seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim
+INFO(139810688055104)2025-03-13 14:33:39,927:remove_artifacts_seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim.derep
+INFO(139810688055104)2025-03-13 14:33:40,485:total sequences 3089, passing sequences 3089, failing sequences 0
+INFO(139810688055104)2025-03-13 14:33:40,486:multiple_sequence_alignment seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140412800137024)2025-03-13 14:33:54,086:deblurring 3794 sequences
+INFO(139810688055104)2025-03-13 14:34:02,581:deblurring 3089 sequences
+INFO(139783352170304)2025-03-13 14:34:08,082:deblurring 3727 sequences
+INFO(140412800137024)2025-03-13 14:34:17,217:3083 unique sequences left following deblurring
+INFO(140412800137024)2025-03-13 14:34:17,248:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB191_1_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(139810688055104)2025-03-13 14:34:17,641:2500 unique sequences left following deblurring
+INFO(139810688055104)2025-03-13 14:34:17,669:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB200_6_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(139810688055104)2025-03-13 14:34:21,505:finished processing file
+INFO(139810688055104)2025-03-13 14:34:21,509:finished processing per sample fasta files
+INFO(139810688055104)2025-03-13 14:34:21,509:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB200_6_L001_R1_001.fastq.gz finished
+INFO(140412800137024)2025-03-13 14:34:22,046:finished processing file
+INFO(140412800137024)2025-03-13 14:34:22,050:finished processing per sample fasta files
+INFO(140412800137024)2025-03-13 14:34:22,050:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB191_1_L001_R1_001.fastq.gz finished
+INFO(139783352170304)2025-03-13 14:34:27,897:2691 unique sequences left following deblurring
+INFO(139783352170304)2025-03-13 14:34:27,927:remove_chimeras_denovo_from_seqs seqs file /tmp/tmptgqyja3f/deblur_working_dir/BB208_10_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmptgqyja3f/deblur_working_dir
+INFO(139783352170304)2025-03-13 14:34:32,058:finished processing file
+INFO(139783352170304)2025-03-13 14:34:32,070:finished processing per sample fasta files
+INFO(139783352170304)2025-03-13 14:34:32,071:worker thread for /tmp/qiime2/jparedesmontero/data/45af8c3f-b46b-4fcd-8e5f-b62cb816033b/data/BB208_10_L001_R1_001.fastq.gz finished
+INFO(140304930457408)2025-03-13 14:34:32,311:create_otu_table for 12 samples, into output table /tmp/tmptgqyja3f/all.biom
+INFO(140304930457408)2025-03-13 14:34:33,176:for output biom table loaded 12 samples, 20242 unique sequences
+INFO(140304930457408)2025-03-13 14:34:33,189:keeping 20242 (out of 20242 sequences) with >=1 reads
+INFO(140304930457408)2025-03-13 14:34:33,485:saved to biom file /tmp/tmptgqyja3f/all.biom
+INFO(140304930457408)2025-03-13 14:34:33,552:saved sequence fasta file to /tmp/tmptgqyja3f/all.seqs.fa
+INFO(140304930457408)2025-03-13 14:34:33,565:getting 16s sequences from the biom table
+INFO(140304930457408)2025-03-13 14:34:33,565:remove_artifacts_seqs file /tmp/tmptgqyja3f/all.seqs.fa
+INFO(140304930457408)2025-03-13 14:35:54,240:total sequences 20242, passing sequences 20228, failing sequences 14
+WARNING(140304930457408)2025-03-13 14:35:54,622:removed 5 samples with reads per sample<1
+INFO(140304930457408)2025-03-13 14:35:54,629:wrote artifact only filtered biom table to /tmp/tmptgqyja3f/reference-non-hit.biom
+INFO(140304930457408)2025-03-13 14:35:54,629:saved biom table sequences to fasta file /tmp/tmptgqyja3f/reference-non-hit.seqs.fa
+INFO(140304930457408)2025-03-13 14:35:54,879:wrote 16s filtered biom table to /tmp/tmptgqyja3f/reference-hit.biom
+INFO(140304930457408)2025-03-13 14:35:54,962:saved biom table sequences to fasta file /tmp/tmptgqyja3f/reference-hit.seqs.fa
+INFO(140304930457408)2025-03-13 14:35:54,970:Keeping temp files
+INFO(140304930457408)2025-03-13 14:35:54,970:deblur workflow finished
+INFO(140304930457408)2025-03-13 14:35:54,970:output saved to /tmp/tmptgqyja3f/all.biom
+INFO(140304930457408)2025-03-13 14:35:54,970:------------------
