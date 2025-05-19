@@ -44,7 +44,7 @@ conda deactivate
    → Skip to Step 7. 
 5. Download installer
 ```
-wget wget https://data.qiime2.org/distro/amplicon/qiime2-amplicon-2024.2-py38-linux-conda.yml
+wget https://data.qiime2.org/distro/amplicon/qiime2-amplicon-2024.2-py38-linux-conda.yml
 ```
 6. Create an environment (This step may take a few minutes. It is important to wait until the installation finishes.)
 ```
