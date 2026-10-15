@@ -97,9 +97,11 @@ conda deactivate
 
 # Organize repository into folders
 - Make sure your current directory `pwd` is
-/ocean/projects/bio260081p/your-username/week-7-repository
+/ocean/projects/bio260081p/your-username
 1. Create a folder by using the `mkdir` command
 ```
+mkdir microbiomes
+cd microbiomes
 mkdir mock-data
 ```
 2. cd into the newly created folder and download the data
