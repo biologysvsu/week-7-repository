@@ -163,7 +163,7 @@ So we’ve given as arguments:
 2.Download file and doeble click to open in web browser.
 
 ## Alternatively try the bridges-2 web interface locate and download your file.
-https://ondemand.bridges2.psc.edu/dex/auth/ldap/login?back=&state=i7kev2oifvnpnntuhmh6iikri
+https://ondemand.bridges2.psc.edu
 
 # NOW LET'S CARRY OUT QC ON REAL DATA!
 1. Create a symlink to the data like this, yup, you not always have to copy or move files around!
