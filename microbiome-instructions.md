@@ -137,7 +137,7 @@ conda activate multiqc
 ```
 3. Now we’ll run fastqc
 ```
-fastqc -t 4 *.fastq --outdir fastqc_mock_out
+fastqc -t 4 mock-data/*.fastq --outdir fastqc_mock_out
 ```
 The arguments that we’re giving fastqc are:
 
