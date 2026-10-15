@@ -4,83 +4,100 @@
 You should know how to do this now! `Woohoo`
 
 ## Install MultiQC
-
-This software has been already installed in our shared ocean directory and it will work fine while you are in that specific direectory. However, for you to use this file from any directory in the HPC, we must first add it to the environment path and source it:
-```
-module load python/3.8.6
-```
-```
-python3 -m pip install --upgrade --user pip
-```
-```
-python3 -m pip install --user multiqc
-```
-```
-echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
-source ~/.bashrc
-```
-Use `multiqc --help` to test the software
-
-## Install QIIME2
-
-1. Load anaconda
+MultiQC is a bioinformatics tool that combines quality-control results from multiple sequencing samples into a single report. We will install MultiQC and FastQC using Conda on Bridges-2.
+1. Load Anaconda: Anaconda allows us to create separate environments containing the software needed for our analyses.
 ```
 module load anaconda3
 ```
-2. Just in case you have an activated conda environment:
+2. Create a Conda environment: The following command creates an environment named multiqc and installs both MultiQC and FastQC.
+```
+conda create -n multiqc -c conda-forge -c bioconda multiqc fastqc -y
+```
+3. Activate the environment: Once installation is compleete, activate the environment:
+```
+conda activate multiqc
+```
+You should now see (multiqc) at the beginning of your terminal prompt.
+
+4. Verify the installation: Check that both programs are available:
+```
+multiqc --version
+```
+```
+fastqc --version
+```
+If both commands display version information, the installation was successful.
+5. Deactivate the MultiQC Conda environment before installing the next software.
 ```
 conda deactivate
 ```
-3. Check that you do not have any environments installed
+## Install QIIME2
+
+1. Load anaconda. If you are using the same terminal window from the MultiQC installation, skip this step. If you closed your terminal and logged back into Bridges-2, run:
+```
+module load anaconda3
+```
+2. Check that you do not have any environments installed
   ```
   conda env list
   ```
   - If you do not have any Conda environments created, you will likely see:
     - `base                  *  /opt/packages/anaconda3-2024.10-1'
-  → Continue to Step 5.
+  → Continue to Step 3.
   - If you do have an existing environment, you will see:
     - `qiime2-amplicon-2024.2     /jet/home/your-username/.conda/envs/qiime2-amplicon-2024.2`
     - `base                  *  /opt/packages/anaconda3-2024.10-1`
-   → Skip to Step 7. 
-5. Download installer
+   → Skip to Step 5. 
+3. Create a QIIME 2 environment: The installation may take several minutes. Wait until your terminal prompt reappears.
+
+```bash
+conda env create -n qiime2 --file https://raw.githubusercontent.com/qiime2/distributions/refs/heads/dev/2026.7/qiime2/released/rachis-qiime2-linux-64-conda.yml
 ```
-wget https://data.qiime2.org/distro/amplicon/qiime2-amplicon-2024.2-py38-linux-conda.yml
-```
-6. Create an environment (This step may take a few minutes. It is important to wait until the installation finishes.)
-```
-conda env create -n qiime2-amplicon-2024.2 --file qiime2-amplicon-2024.2-py38-linux-conda.yml
-```
-7. Once we’ve made it, we can activate this new environment:
-```
-conda activate qiime2-amplicon-2024.2
-```
-8. And now we can remove the file that we used to install it:
-```
-rm qiime2-amplicon-2024.2-py38-linux-conda.yml
+4. Activate QIIME 2.
+
+```bash
+conda activate qiime2
 ```
 
-**(OPTIONAL) Troubleshooting: If QIIME2 Does Not Work**
-If QIIME2 does not work, there may be a Conda environment conflict.
+Your terminal prompt should now begin with `(qiime2)`.
 
-a. Check for Incomplete Installations
+5. Check that QIIME 2 was installed successfully.
+
+```bash
+qiime info
 ```
-ls -l /jet/home/your-username/.conda/envs/
+
+    **(OPTIONAL) Troubleshooting: If QIIME2 Does Not Work**
+    If QIIME2 does not work, there may be a Conda environment conflict.
+    
+    a. Check for Incomplete Installations
+    ```
+    ls -l /jet/home/your-username/.conda/envs/
+    ```
+    If you see an incomplete QIIME2 installation, proceed to the next step.
+    b. Manually delete those installations
+    ```
+    rm -rf /jet/home/yourusername/.conda/envs/qiime2-amplicon-2024.2
+    ```
+    c. Clean Up Conda Cache
+    ```
+    conda clean --all -y
+    ```
+    d. Check how much disk space is being used by Conda's downloaded packages. Ideally, this should be less than 10 GB.
+    ```
+    du -sh ~/.conda/pkgs
+    ```
+    e. Reinstall QIIME2
+    Repeat Steps 3-5 to reinstall QIIME2.
+
+6. Deactivate the Conda environment for now. We will activate it again once our input files are ready.
 ```
-If you see an incomplete QIIME2 installation, proceed to the next step.
-b. Manually delete those installations
+conda deactivate
 ```
-rm -rf /jet/home/yourusername/.conda/envs/qiime2-amplicon-2024.2
-```
-c. Clean Up Conda Cache
-```
-conda clean --all
-```
-d. Reinstall QIIME2
-Repeat Steps 5–8 to reinstall QIIME2.
 
 # Organize repository into folders
 - Make sure your current directory `pwd` is
-/ocean/projects/agr250001/your-username/week-7-repository
+/ocean/projects/bio260081p/your-username/week-7-repository
 1. Create a folder `raw-data` by using the `mkdir` command
 ```
 mkdir mock-data
@@ -88,9 +105,9 @@ mkdir mock-data
 2. cd into the newly created folder and download the data
 ```
 cd mock-data
-wget https://www.ibdmdb.org/downloads/raw/HMP2/16S/2018-01-08/206534.fastq.gz
-wget https://www.ibdmdb.org/downloads/raw/HMP2/16S/2018-01-08/206536.fastq.gz
-wget https://www.ibdmdb.org/downloads/raw/HMP2/16S/2018-01-08/206538.fastq.gz
+wget https://g-227ca.190ebd.75bc.data.globus.org/ibdmdb/raw/HMP2/16S/2018-01-08/206534.fastq.gz
+wget https://g-227ca.190ebd.75bc.data.globus.org/ibdmdb/raw/HMP2/16S/2018-01-08/206536.fastq.gz
+wget https://g-227ca.190ebd.75bc.data.globus.org/ibdmdb/raw/HMP2/16S/2018-01-08/206538.fastq.gz
 ```
 3. Unzip the data. Note that sometimes when we run bioinformatics programs they can uncompress the files within the program, but other times we need to uncompress (unzip) them first.
 
