@@ -98,7 +98,7 @@ conda deactivate
 # Organize repository into folders
 - Make sure your current directory `pwd` is
 /ocean/projects/bio260081p/your-username/week-7-repository
-1. Create a folder `raw-data` by using the `mkdir` command
+1. Create a folder by using the `mkdir` command
 ```
 mkdir mock-data
 ```
@@ -119,6 +119,11 @@ gunzip *.fastq.gz
 ```
 less 206534.fastq
 ```
+## Ready to run some analysis
+Request computer resources
+```
+interact -t 3:00:00 --ntasks-per-node=16 --mem=30G
+```
 
 ## We will first perform quality control (QC) on our data
 1. First we’ll be running fastqc, and to do that, we’ll first make a directory for the output to go:
@@ -126,19 +131,19 @@ less 206534.fastq
 cd .. #Goes one directory back (up one level)
 mkdir fastqc_mock_out
 ```
-2. Load required module (Loads the program/software you will use)
+2. Activate the multiqc environment (Loads fastqc and multiqc)
 ```
-module load FastQC
+conda activate multiqc
 ```
 3. Now we’ll run fastqc
 ```
-fastqc -t 4 mock-data/*.fastq -o fastqc_mock_out
+fastqc -t 4 *.fastq --outdir fastqc_mock_out
 ```
 The arguments that we’re giving fastqc are:
 
 - -t 4: the number of threads to use. Sometimes “threads” will be shown as --threads, --cpus, --processors, --nproc, or similar. Basically, developers of packages can call things whatever they like, but you can use the help documentation to see what options are available. We’re using 4 here because that’s the maximum that we have available. See below (htop) for how we find out about how many we have available.
 - mock-data/*.fastq: the fastq files that we want to check the quality of.
-- -o fastqc_mock_out: the folder to save the output to.
+- --outdir fastqc_mock_out: the folder to save the output to.
 
 4. Next we’ll run multiqc. The name suggests it might be performing QC on multiple files, but it’s actually for combining the output together of multiple files, so we can run it like this:
 
@@ -154,11 +159,13 @@ So we’ve given as arguments:
 1. Add, Commit and Push multiqc_mock.html to your GitHub repository.
 2.Download file and doeble click to open in web browser.
 
+## Alternatively try the bridges-2 web interface locate and download your file.
+https://ondemand.bridges2.psc.edu/dex/auth/ldap/login?back=&state=i7kev2oifvnpnntuhmh6iikri
 
 # NOW LET'S CARRY OUT QC ON REAL DATA!
 1. Create a symlink to the data like this, yup, you not always have to copy or move files around!
 ```
-ln -s /ocean/projects/agr250001p/shared/week-7-data/raw_data .
+ln -s /ocean/projects/bio260081p/shared/week-7-data/raw_data .
 ```
 2. Create a directory for the fastqc output:
 ```
@@ -166,17 +173,18 @@ mkdir fastqc_raw_data_out
 ```
 3. Run fastqc
 ```
-fastqc -t 4 raw_data/*.fastq.gz -o fastqc_raw_data_out
+fastqc -t 4 raw_data/*.fastq.gz --outdir fastqc_raw_data_out
 ```
 4. Run multiqc
 ```
 multiqc fastqc_raw_data_out --filename multiqc_raw_data.html
 ```
+5. Inspect the output file
 
 ## Let's run Quimme to study the microbiome
 1. Create a Symlink for the metadata file from the share folder
 ```
-ln -s /ocean/projects/agr250001p/shared/week-7-data/Blueberry_metadata_reduced.tsv .
+ln -s /ocean/projects/bio260081p/shared/week-7-data/Blueberry_metadata_reduced.tsv .
 ```
 2. Inspect the metadata file
 ```         
@@ -189,16 +197,16 @@ head Blueberry_metadata_reduced.tsv
 ```         
 mkdir reads_qza
 ```
-2. You had installed the latest version of QIIME2, so you can either activate that environment with the command below.
-
-```         
-conda activate qiime2-amplicon-2024.2
+2. You had installed the latest version of QIIME2, so you can  activate that environment with the command below.
+Deactivate multiqc first
 ```
-- When you are finished this tutorial you can deactivate the environment using:
-
-```         
 conda deactivate
 ```
+Now activate qiime2
+```         
+conda activate qiime2
+```
+
 3. Feed qiime the raw reads
 ```         
 qiime tools import \
@@ -274,15 +282,15 @@ qiime feature-table summarize \
 ###  Run taxonomic classification
 1. Create symlink to taxonomic data
 ```
-ln -s /ocean/projects/agr250001p/shared/week-7-data/taxa .
+ln -s /ocean/projects/bio260081p/shared/week-7-data/taxa .
 ```
 2. Run taxonomic classification (Homework)
 ```         
 qiime feature-classifier classify-sklearn \
+  --i-classifier /ocean/projects/bio260081p/shared/week-7-data/SILVA_144_SSURef_NR99_weighted_classifier_full-length_plant-rhizosphere.qza \
   --i-reads deblur_output/representative_sequences.qza \
-  --i-classifier /ocean/projects/agr250001p/shared/week-7-data/silva-138-99-nb-classifier.qza \
-  --p-n-jobs 4 \
-  --output-dir taxa
+  --o-classification taxa/classification.qza \
+  --p-n-jobs 4
 ```
 ### Filtering resultant table
 1. Filter out rare ASVs
@@ -334,8 +342,8 @@ qiime feature-table summarize \
 # VISUALIZATION
 1. This is a phylogenetic tree I pre-generated, please create a symlink
 ```         
-ln -s /ocean/projects/agr250001p/shared/week-7-data/asvs-tree.qza .
-ln -s /ocean/projects/agr250001p/shared/week-7-data/insertion-placements.qza .
+ln -s /ocean/projects/bio260081p/shared/week-7-data/asvs-tree.qza .
+ln -s /ocean/projects/bio260081p/shared/week-7-data/insertion-placements.qza .
 ```
 2. Generate rarefaction curves
 ```         
