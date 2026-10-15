@@ -135,6 +135,7 @@ mkdir fastqc_mock_out
 ```
 2. Activate the multiqc environment (Loads fastqc and multiqc)
 ```
+module load anaconda3
 conda activate multiqc
 ```
 3. Now we’ll run fastqc
