@@ -229,7 +229,8 @@ qiime cutadapt trim-paired \
   --p-front-r ACGGGCRGTGWGTRCAA \
   --p-discard-untrimmed \
   --p-no-indels \
-  --o-trimmed-sequences reads_qza/reads_trimmed.qza
+  --o-trimmed-sequences reads_qza/reads_trimmed.qza \
+  --o-stats reads_qza/cutadapt_stats.qza
 ```
 5 Visualize your data now
 ```         
@@ -237,7 +238,9 @@ qiime demux summarize \
   --i-data reads_qza/reads_trimmed.qza \
   --o-visualization reads_qza/reads_trimmed_summary.qzv
 ```
-- Git add, commit and push `reads_trimmed_summary.qzv` Download and open in https://view.qiime2.org/
+- Download file from bridges2 on demand
+- OR Git add, commit and push `reads_trimmed_summary.qzv`
+- Download and open in https://view.qiime2.org/
 
 ### Denoising reads
 1. Join pair-end reds
@@ -272,13 +275,16 @@ qiime deblur denoise-16S \
   --p-min-reads 1 \
   --output-dir deblur_output
 ```
-- Note: this command may take up to 10 minutes or so to run.
+Note: This command may take about 10 minutes to run. Keep your computer awake and prevent it from going to sleep, as this may disconnect you from the HPC session and interrupt the process.
 
 4. Summarize dublur output
 ```         
 qiime feature-table summarize \
   --i-table deblur_output/table.qza \
-  --o-visualization deblur_output/deblur_table_summary.qzv
+  --o-summary deblur_output/deblur_table_summary.qzv \
+  --o-feature-frequencies deblur_output/feature_frequencies.qza \
+  --o-sample-frequencies deblur_output/sample_frequencies.qza
+
 ```
 - Git add, commit and push `deblur_table_summary.qzv` Download and open in https://view.qiime2.org/
 
@@ -304,7 +310,10 @@ qiime feature-table filter-features \
   --p-min-samples 1 \
   --o-filtered-table deblur_output/deblur_table_filt.qza
 ```
-- replace X with desired frequency
+- replace with desired frequency:
+- --p-min-frequency 10: Keep ASVs detected at least 10 times across all 12 samples combined.
+- --p-min-samples 1: Allow an ASV to remain even if it occurs in only one sample.
+
 2. Filter out contaminant and unclassified ASVs
 ```         
 qiime taxa filter-table \
@@ -318,7 +327,9 @@ qiime taxa filter-table \
 ```         
 qiime feature-table summarize \
   --i-table deblur_output/deblur_table_filt_contam.qza \
-  --o-visualization deblur_output/deblur_table_filt_contam_summary.qzv
+  --o-summary deblur_output/deblur_table_filt_contam_summary.qzv \
+  --o-feature-frequencies deblur_output/contam_feature_freq.qza \
+  --o-sample-frequencies deblur_output/contam_sample_freq.qza
 ```
 - Git add, commit and push `deblur_table_filt_contam_summary.qzv` Download and open in https://view.qiime2.org/
 - Answer question 16 What is the minimum and maximum sequencing depth across all samples?
@@ -337,16 +348,22 @@ qiime feature-table filter-seqs \
 ```         
 qiime feature-table summarize \
   --i-table deblur_output/deblur_table_final.qza \
-  --o-visualization deblur_output/deblur_table_final_summary.qzv
+  --o-summary deblur_output/deblur_table_final_summary.qzv \
+  --o-feature-frequencies deblur_output/final_feature_freq.qza \
+  --o-sample-frequencies deblur_output/final_sample_freq.qza
 ```
 
 - Git add, commit and push `deblur_table_final_summary.qzv` Download and open in https://view.qiime2.org/
 
 # VISUALIZATION
-1. This is a phylogenetic tree I pre-generated, please create a symlink
+1. Create a phylogenetic tree
 ```         
-ln -s /ocean/projects/bio260081p/shared/week-7-data/asvs-tree.qza .
-ln -s /ocean/projects/bio260081p/shared/week-7-data/insertion-placements.qza .
+qiime phylogeny align-to-tree-mafft-fasttree \
+  --i-sequences deblur_output/rep_seqs_final.qza \
+  --o-alignment deblur_output/aligned-rep-seqs.qza \
+  --o-masked-alignment deblur_output/masked-aligned-rep-seqs.qza \
+  --o-tree deblur_output/unrooted-tree.qza \
+  --o-rooted-tree asvs-tree.qza
 ```
 2. Generate rarefaction curves
 ```         
@@ -357,9 +374,10 @@ qiime diversity alpha-rarefaction \
   --i-phylogeny asvs-tree.qza \
   --o-visualization rarefaction_curves.qzv
 ```
+replace X with minimum frequency per sample 4500(?)
 - Answer question 17
 
-2. Calculating diversity metrics
+2. Calculating diversity metrics.  replace X with min freq
 ```         
 qiime diversity core-metrics-phylogenetic \
   --i-table deblur_output/deblur_table_final.qza \
